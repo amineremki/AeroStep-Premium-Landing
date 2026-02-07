@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0
+    ;
+    font-family: sans-serif;
+}
+body{
+    background: linear-gradient(red , white) ;
+    
+    height: 100vh;
+    width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+body::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+   clip-path:circle( 35% at right);
+   background: linear-gradient(white , red);
+   position: absolute;
+   z-index: -1;
+}
+  nav h2:hover , nav ul li a:hover{
+    background: white;
+    transform: scale(1.2);
+    transition: 0.3s;
+    cursor: pointer;
+    color: red;
+    padding: 10px;
+    border-radius: 5px;
+   
+    
+ }
+nav h2{
+    color: white;
+    background:red;
+   padding: 5px;
+   margin: 5px;
+   border-radius: 5px;
+}
+
+nav ul li a{
+    
+                      color:
+     white;
+               background:
+     red;
+                       padding:
+      5px;
+   margin:
+    5px;
+   border-radius:
+    5px;
+}
+
+.container{
+    background: rgba(255, 255, 255, 0.1);
+   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+   backdrop-filter: blur(15px);
+    border-radius: 45px;
+    height: 80%;
+    width: 80%;
+    overflow: hidden;
+  
+}
+.nav{
+    display: flex;
+    justify-content: center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%; 
+   
+}
+li ,a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px;
+
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+}
+.main .image img{
+    width: 450px;
+    
+    
+}
+.main .text h2  , p{
+color: white; 
+padding: 0px 25px;
+line-height: 25px;
+
+}
+
+@media (min-width:950px) and (max-width:1150px) {
+   .main .image img{
+        width: 333px;
+        
+    }
+
+}
+@media(max-width:950px){
+    .container .main , .nav nav h2 , ul li a
+{
+    flex-direction: column;
+} 
+.main .image img{
+    width: 250px;
+}
+
+body::after {
+      content: "";
+
+clip-path:circle( 35% at bottom);
+   background: red;
+   position: absolute;
+   z-index: -1;
+
+
+}
+ 
+
+.nav nav{
+    flex-direction: column;
+    justify-content:flex-start;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+   
+
+    
+    
